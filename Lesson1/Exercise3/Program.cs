@@ -7,30 +7,30 @@ namespace Exercise3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите первую строку:");
+            Console.WriteLine("Enter First string:");
             String first = Console.ReadLine();
-            Console.WriteLine("Введите вторую строку:");
+            Console.WriteLine("Enter Second string:");
             String second = Console.ReadLine();
-            Console.WriteLine("Введите третью строку:");
+            Console.WriteLine("Enter third string:");
             String third = Console.ReadLine();
 
-            String firstLowerCase = first.ToLower();
-            String secondLowerCase = second.ToLower();
-            String thirdLowerCase = third.ToLower();
+            String firstUpperCase = first.ToUpper();
+            String secondUpperCase = second.ToUpper();
+            String thirdUpperCase = third.ToUpper();
 
             //Method for startWith First to Second
-            bool CompareFirstSecond()
-            {
-                return firstLowerCase.StartsWith(secondLowerCase);
-            }
-            // Method for endWith first to third
-            bool CompareFirstThird()
-            {
-                return firstLowerCase.EndsWith(thirdLowerCase);
-            }
+            //bool CompareFirstSecond()
+            ////{
+            //    return firstUpperCase.StartsWith(secondLowerCase);
+            //}
+            //// Method for endWith first to third
+            //bool CompareFirstThird()
+            //{
+            //    return firstUpperCase.EndsWith(thirdLowerCase);
+            //}
                   
-            Console.WriteLine($"String {firstLowerCase} starts from {secondLowerCase}: {CompareFirstSecond()}");
-            Console.WriteLine($"String {firstLowerCase} ends with {thirdLowerCase}: {CompareFirstSecond()}");
+            Console.WriteLine($"String {firstUpperCase} starts from {secondUpperCase}: {firstUpperCase.StartsWith(secondUpperCase)}");
+            Console.WriteLine($"String {firstUpperCase} ends with {thirdUpperCase}: {firstUpperCase.EndsWith(thirdUpperCase)}");
             Console.ReadKey();
         }
     }

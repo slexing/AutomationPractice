@@ -20,7 +20,7 @@ namespace Exercise2
                 if (shape.ValidateSides(side1, side2, side3))
                 {
                     double d = shape.CalculateDiagonal();
-                    Console.WriteLine($"Диагональ пареллепипеда равна: {d}");
+                    Console.WriteLine($"Diagonal is: {d}");
                     Console.ReadKey();
                 }
 

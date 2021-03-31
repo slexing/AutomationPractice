@@ -23,9 +23,9 @@ namespace Exercise2
         {
             try
             {
-                ThrowArgumentException(side1);
-                ThrowArgumentException(side2);
-                ThrowArgumentException(side3);
+                SideZeroValidate(side1);
+                SideZeroValidate(side2);
+                SideZeroValidate(side3);
 
                 return true;
             }
@@ -35,7 +35,7 @@ namespace Exercise2
             }
         }
         //Method for zero check
-        private void ThrowArgumentException(int side)
+        private void SideZeroValidate(int side)
         {
             if (side <= 0)
             {

@@ -6,11 +6,11 @@ namespace Exercise4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите первую строку");
+            Console.WriteLine("Enter First string: ");
             string first = Console.ReadLine();
-            Console.WriteLine("Введите вторую строку");
+            Console.WriteLine("Enter Second string: ");
             string second = Console.ReadLine();
-            Console.WriteLine("Введите символ");
+            Console.WriteLine("Enter Char: ");
             char symbol = Console.ReadKey().KeyChar;
             Console.WriteLine("");
             var sum = first +" "+second;
