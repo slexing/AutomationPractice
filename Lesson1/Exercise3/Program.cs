@@ -17,18 +17,7 @@ namespace Exercise3
             String firstUpperCase = first.ToUpper();
             String secondUpperCase = second.ToUpper();
             String thirdUpperCase = third.ToUpper();
-
-            //Method for startWith First to Second
-            //bool CompareFirstSecond()
-            ////{
-            //    return firstUpperCase.StartsWith(secondLowerCase);
-            //}
-            //// Method for endWith first to third
-            //bool CompareFirstThird()
-            //{
-            //    return firstUpperCase.EndsWith(thirdLowerCase);
-            //}
-                  
+                 
             Console.WriteLine($"String {firstUpperCase} starts from {secondUpperCase}: {firstUpperCase.StartsWith(secondUpperCase)}");
             Console.WriteLine($"String {firstUpperCase} ends with {thirdUpperCase}: {firstUpperCase.EndsWith(thirdUpperCase)}");
             Console.ReadKey();
